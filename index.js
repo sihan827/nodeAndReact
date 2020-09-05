@@ -23,7 +23,7 @@ mongoose
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 
-/* get 메소드는 첫 번째 인자로 path 경로를 받고  두 번째 인자로 request(요청)와 response(응답)을 인자로 받는 함수를 받는다. 해당 함수에서 현재는 response의 send 메소드를 통해 response로  "hello world"를 보내도록 하고 있다. */
+/* get 메소드는 첫 번째 인자로 url path 경로를 받고  두 번째 인자로 request(요청)와 response(응답)을 인자로 받는 함수를 받는다. 해당 함수에서 현재는 response의 send 메소드를 통해 response로  "hello world"를 보내도록 하고 있다. */
 app.get("/", (req, res) => res.send("hello world!"));
 
 /* listen 메소드는 첫 번째 인자로 포트 번호를 받고 두 번째 인자로 콜백함수를 받아 app을 실행시킨다. */
